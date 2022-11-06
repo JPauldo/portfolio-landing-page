@@ -11,12 +11,13 @@
 </head>
 <body>
   <header>
-    <h1>My Name</h1>
+    <h1>Justin Pauldo</h1>
 
     <nav>
-      <a href="#section-1">Link 1</a>
-      <a href="#section-2">Link 2</a>
-      <a href="#section-3">Link 3</a>
+      <a href="#section-1">About Me</a>
+      <a href="#section-2">Work</a>
+      <a href="#section-3">Contact</a>
+      <a href="https://cdn-images.zety.com/pages/resume_meme_2.png" target="_blank">Resume</a>
     </nav>
   </header>
 
@@ -26,7 +27,7 @@
   </figure>
 
   <main>
-    <section class="main-section">
+    <section class="main-section" id="section-1">
       <aside>
         <h1>Section 1</h1>
       </aside>
@@ -59,70 +60,76 @@
       </article>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section-2">
       <aside>
         <h1>Section 2</h1>
       </aside>
 
       <section class="project-grid">
         <figure id="project-main">
-          <section class="project-title">
-            <h3>Project 1</h3>
-            <p>Main Code</p>
+          <section class="project-title" onclick="setId(this.id)">
+            <h3>Pre-work Study Guide</h3>
+            <p>HTML/CSS</p>
           </section>
         </figure>
 
-        <figure class="project-extra" id="project-2">
+        <figure class="project-extra" id="project-2" onclick="setId(this.id)">
           <section class="project-title">
-            <h3>Project 2</h3>
-            <p>Main Code</p>
+            <h3>Horiseon (Accessibility)</h3>
+            <p>HTML/CSS</p>
           </section>
         </figure>
 
-        <figure class="project-extra" id="project-3">
+        <figure class="project-extra" id="project-3" onclick="setId(this.id)">
           <section class="project-title">
-            <h3>Project 3</h3>
-            <p>Main Code</p>
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
           </section>
         </figure>
 
-        <figure class="project-extra" id="project-4">
+        <figure class="project-extra" id="project-4" onclick="setId(this.id)">
           <section class="project-title">
-            <h3>Project 4</h3>
-            <p>Main Code</p>
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
           </section>
         </figure>
 
-        <figure class="project-extra" id="project-5">
+        <figure class="project-extra" id="project-5" onclick="setId(this.id)">
           <section class="project-title">
-            <h3>Project 5</h3>
-            <p>Main Code</p>
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
           </section>
         </figure>
       </section>
     </section>
 
-    <section class="main-section">
+    <section class="main-section" id="section-3">
       <aside>
         <h1>Section 3</h1>
       </aside>
 
       <nav id="contact">
-          <a href="" target="_blank">
+          <a href="https://media.tenor.com/UiUFIuFzuH0AAAAC/memes-wrong-number.gif" target="_blank">
             <section>
-              <i class="material-icons">&#xe551;</i>Outside Link 1
+              <i class="material-icons">&#xe551;</i>+1 (689) 863-9153
             </section>
           </a>
 
-          <a href="" target="_blank">
+          <a href="https://fluentcrm.com/wp-content/uploads/2022/08/Screenshot_18-2.jpg" target="_blank">
             <section>
-              <i class="material-icons">&#xe158;</i>Outside Link 2
+              <i class="material-icons">&#xe158;</i>jdpauldo862@gmailni.com
             </section>
           </a>
 
-          <a href="" target="_blank">
+          <a href="https://www.linkedin.com/" target="_blank">
             <section>
-              <i class="material-icons">&#xe8f8;</i>Outside Link 3
+              <i class="material-icons">&#xe8f8;</i>LinkedIn
+            </section>
+          </a>
+
+          <a href="https://github.com/JPauldo" target="_blank">
+            <section>
+              <i class="material-icons">&#xe30a;</i>Github
             </section>
           </a>
       </nav>

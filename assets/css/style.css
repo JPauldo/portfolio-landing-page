@@ -198,6 +198,7 @@ aside {
 #contact a:hover {
   color: #5E548E;
   scale: 1.1;
+  text-shadow: 1px 1px 2px #5E548E, 0 0 1em #8E9AAF, 0 0 0.2em #8E9AAF;
 }
 
 /* For Smartphone Screens */
