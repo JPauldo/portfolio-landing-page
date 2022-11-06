@@ -1,4 +1,4 @@
-/*  */
+/* Formatting for the Page */
 body {
   background-color: #DEE2FF;
   font-family: Arial;
@@ -27,6 +27,7 @@ header nav {
 header a {
   color: #DEE2FF;
   text-decoration: none;
+  padding: 0 20px;
 }
 
 /* Formatting for the Banner */
@@ -52,9 +53,10 @@ header a {
 
 #banner h2 {
   bottom: 10px;
-  padding: 10px;
+  padding: 10px 25px;
   position: absolute;
   right: 0;
+  text-shadow: 1px 1px 2px #5E548E, 0 0 1em #8E9AAF, 0 0 0.2em #8E9AAF;
 }
 
 /* Formatting for the Main Content */
@@ -68,6 +70,10 @@ main {
   grid-row-gap: 20px;
   grid-column-gap: 2rem;
   margin: 10px;
+}
+
+.main-section article p {
+  margin-right: 30px;
 }
 
 /* Formatting for the Aside */
@@ -113,11 +119,6 @@ aside {
   border: 2px solid #9F86C0;
 }
 
-.project-grid figure:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 #project-main {
   position: relative;
   grid-column-start: 1;
@@ -125,17 +126,8 @@ aside {
   background-image: url("../images/aleh-tsikhanau-unsplash.jpg");
 }
 
-#project-main:hover  {
-  scale: 1.05;
-}
-
 #project-2 {
   background-image: url("../images/anamnesis33-unsplash.jpg");
-}
-
-#project-2:hover, #project-3:hover,
-#project-4:hover, #project-5:hover {
-  scale: 1.1;
 }
 
 #project-3 {
@@ -150,7 +142,41 @@ aside {
   background-image: url("../images/matteo-piscioneri-unsplash.jpg");
 }
 
-/*  */
+/* The Effects for the Project Tile Hover */
+.project-grid figure:hover {
+  animation: backgroundScroll 15s linear infinite;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#project-main:hover  {
+  scale: 1.05;
+}
+
+#project-2:hover, #project-3:hover,
+#project-4:hover, #project-5:hover {
+  scale: 1.1;
+}
+
+/* Key frames for backgroundScroll */
+@keyframes backgroundScroll {
+  0% {
+    background-position: 0% 0%;
+    /* opacity: 0.8; */
+  }
+  
+  50% {
+    background-position: 50% 50%;
+    /* opacity: 0.4; */
+  }
+  
+  100% {
+    background-position: 100% 100%;
+    /* opacity: 0.2; */
+  }
+}
+
+/* Formatting the Contact Section */
 #contact {
   display: flex;
   justify-content: space-evenly;
