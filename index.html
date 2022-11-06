@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Porfolio</title>
 </head>
@@ -25,7 +26,7 @@
   </figure>
 
   <main>
-    <section>
+    <section class="main-section">
       <aside>
         <h1>Section 1</h1>
       </aside>
@@ -58,42 +59,42 @@
       </article>
     </section>
 
-    <section>
+    <section class="main-section">
       <aside>
         <h1>Section 2</h1>
       </aside>
 
-      <section>
-        <figure>
-          <section>
+      <section class="project-grid">
+        <figure id="project-main">
+          <section class="project-title">
             <h3>Project 1</h3>
             <p>Main Code</p>
           </section>
         </figure>
 
-        <figure>
-          <section>
+        <figure class="project-extra">
+          <section class="project-title">
             <h3>Project 2</h3>
             <p>Main Code</p>
           </section>
         </figure>
 
-        <figure>
-          <section>
+        <figure class="project-extra">
+          <section class="project-title">
             <h3>Project 3</h3>
             <p>Main Code</p>
           </section>
         </figure>
 
-        <figure>
-          <section>
+        <figure class="project-extra">
+          <section class="project-title">
             <h3>Project 4</h3>
             <p>Main Code</p>
           </section>
         </figure>
 
-        <figure>
-          <section>
+        <figure class="project-extra">
+          <section class="project-title">
             <h3>Project 5</h3>
             <p>Main Code</p>
           </section>
@@ -101,16 +102,30 @@
       </section>
     </section>
 
-    <section>
+    <section class="main-section">
       <aside>
         <h1>Section 3</h1>
       </aside>
 
-      <section>
-        <a href="">Outside Link 1</a>
-        <a href="">Outside Link 2</a>
-        <a href="">Outside Link 3</a>
-      </section>
+      <nav id="contact">
+          <a href="" target="_blank">
+            <section>
+              <i class="material-icons">&#xe551;</i>Outside Link 1
+            </section>
+          </a>
+
+          <a href="" target="_blank">
+            <section>
+              <i class="material-icons">&#xe158;</i>Outside Link 2
+            </section>
+          </a>
+
+          <a href="" target="_blank">
+            <section>
+              <i class="material-icons">&#xe8f8;</i>Outside Link 3
+            </section>
+          </a>
+      </nav>
     </section>
   </main>
 </body>
