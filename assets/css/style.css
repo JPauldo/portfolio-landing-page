@@ -5,18 +5,17 @@ body {
   color: #231942;
 }
 
-/*  */
+/* Formatting for the Header */
 header {
   background-color: #5E548E;
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-bottom: 2px dashed #231942;
 }
 
 header h1 {
   background-color: #8E9AAF;
-  color: #F0F8FF;
+  color: #DEE2FF;
   padding: 0 10px 0;
 }
 
@@ -25,13 +24,12 @@ header nav {
   text-align: center;
 }
 
-/*  */
-a {
-  color: #F0F8FF;
+header a {
+  color: #DEE2FF;
   text-decoration: none;
 }
 
-/*  */
+/* Formatting for the Banner */
 #banner {
   background-image: url("../images/jorg-angeli-unsplash.jpg");
   background-position: center;
@@ -41,7 +39,6 @@ a {
   height: 240px;
   margin: 0;
   position: relative;
-  border-bottom: 2px dashed #231942;
 }
 
 #banner img {
@@ -60,7 +57,7 @@ a {
   right: 0;
 }
 
-/*  */
+/* Formatting for the Main Content */
 main {
   display: grid;
 }
@@ -71,20 +68,27 @@ main {
   grid-row-gap: 20px;
   grid-column-gap: 2rem;
   margin: 10px;
-  border-bottom: 2px dashed #231942;
 }
 
+/* Formatting for the Aside */
 aside {
   text-align: right;
   padding-right: 1em;
   border-right: 2px solid #231942;
 }
 
-/*  */
+/* Formatting for the Project Section */
 .project-grid {
   display: inline-grid;
   grid-template-rows: 1.5fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+}
+
+.project-grid figure {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
 }
 
 .project-extra {
@@ -100,83 +104,50 @@ aside {
   right: 0;
 }
 
-/*  */
-#project-main {
+.project-title h3, .project-title p {
+  margin: 5px;
+}
+
+/* Formatting for the Project Tiles */
+.project-grid figure {
   border: 2px solid #9F86C0;
+}
+
+.project-grid figure:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#project-main {
   position: relative;
   grid-column-start: 1;
   grid-column-end: 3;
   background-image: url("../images/aleh-tsikhanau-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
 }
 
-#project-main:hover {
-  opacity: 0.5;
+#project-main:hover  {
   scale: 1.05;
-  cursor: pointer;
 }
 
 #project-2 {
   background-image: url("../images/anamnesis33-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
 }
 
-#project-2:hover {
-  opacity: 0.5;
+#project-2:hover, #project-3:hover,
+#project-4:hover, #project-5:hover {
   scale: 1.1;
-  cursor: pointer;
 }
 
 #project-3 {
   background-image: url("../images/jason-leung-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
-}
-
-#project-3:hover {
-  opacity: 0.5;
-  scale: 1.1;
-  cursor: pointer;
 }
 
 #project-4 {
   background-image: url("../images/paul-kapischka-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
-}
-
-#project-4:hover {
-  opacity: 0.5;
-  scale: 1.1;
-  cursor: pointer;
 }
 
 #project-5 {
   background-image: url("../images/matteo-piscioneri-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
-}
-
-#project-5:hover {
-  opacity: 0.5;
-  scale: 1.1;
-  cursor: pointer;
-}
-
-.project-grid h3, .project-grid p {
-  margin: 5px;
 }
 
 /*  */
@@ -192,13 +163,15 @@ aside {
 }
 
 #contact a {
+  color: #231942;
   margin-left: 10px;
-  color: #000;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 #contact a:hover {
-  color: #F0F8FF;
+  color: #5E548E;
+  scale: 1.1;
 }
 
 /* For Smartphone Screens */
