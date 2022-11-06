@@ -32,10 +32,13 @@ a {
 
 /*  */
 #banner {
+  background-image: url("../images/jorg-angeli-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
-  height: 200px;
+  height: 240px;
   margin: 0;
-  padding: 20px;
   position: relative;
   border-bottom: 2px dashed #231942;
 }
@@ -46,6 +49,7 @@ a {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  margin: 20px;
 }
 
 #banner h2 {
@@ -83,13 +87,6 @@ aside {
   grid-template-columns: 1fr 1fr;
 }
 
-#project-main {
-  border: 2px solid #9F86C0;
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
 .project-extra {
   border: 2px solid #9F86C0;
   height: 150px;
@@ -101,6 +98,80 @@ aside {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+#project-main {
+  border: 2px solid #9F86C0;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("../images/aleh-tsikhanau-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#project-main:hover {
+  opacity: 0.5;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+#project-2 {
+  background-image: url("../images/anamnesis33-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#project-2:hover {
+  opacity: 0.5;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#project-3 {
+  background-image: url("../images/jason-leung-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#project-3:hover {
+  opacity: 0.5;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#project-4 {
+  background-image: url("../images/paul-kapischka-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#project-4:hover {
+  opacity: 0.5;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+#project-5 {
+  background-image: url("../images/matteo-piscioneri-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+#project-5:hover {
+  opacity: 0.5;
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .project-grid h3, .project-grid p {
@@ -122,4 +193,9 @@ aside {
 #contact a {
   margin-left: 10px;
   color: #000;
+  transition: 0.3s;
+}
+
+#contact a:hover {
+  color: #F0F8FF;
 }
