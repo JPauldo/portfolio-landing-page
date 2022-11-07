@@ -88,17 +88,29 @@ aside {
   display: inline-grid;
   grid-template-rows: 1.5fr 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  gap: 20px 25px;
+  margin-right: 20px;
+}
+
+.project-frame {
+  border: 2px solid #9F86C0;
+  position: relative;
+  transition: 0.3s;
+}
+
+#project-main-frame {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .project-grid figure {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: 0.3s;
+  margin: 0;
 }
 
 .project-extra {
-  border: 2px solid #9F86C0;
   height: 150px;
   position: relative;
 }
@@ -115,18 +127,15 @@ aside {
 }
 
 /* Formatting for the Project Tiles */
-.project-grid figure {
-  border: 2px solid #9F86C0;
-}
 
 #project-main {
   position: relative;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  height: 100%;
   background-image: url("../images/aleh-tsikhanau-unsplash.jpg");
 }
 
 #project-2 {
+  position: relative;
   background-image: url("../images/anamnesis33-unsplash.jpg");
 }
 
@@ -142,37 +151,44 @@ aside {
   background-image: url("../images/matteo-piscioneri-unsplash.jpg");
 }
 
-/* The Effects for the Project Tile Hover */
-.project-grid figure:hover {
-  animation: backgroundScroll 15s linear infinite;
+/* Hovering Logic the Project Tile */
+.project-frame:hover {
   cursor: pointer;
-  opacity: 0.5;
+  scale: 1.1;
 }
 
-#project-main:hover  {
+#project-main-frame:hover {
   scale: 1.05;
 }
 
-#project-2:hover, #project-3:hover,
-#project-4:hover, #project-5:hover {
-  scale: 1.1;
+.project-frame > figure:hover {
+  animation: backgroundScroll 5s linear infinite;
 }
 
 /* Key frames for backgroundScroll */
 @keyframes backgroundScroll {
   0% {
     background-position: 0% 0%;
-    /* opacity: 0.8; */
+  }
+
+  25% {
+    background-position: 25% 25%;
+    opacity: 0.8;
   }
   
   50% {
     background-position: 50% 50%;
-    /* opacity: 0.4; */
+    opacity: 0.6;
+  }
+
+  75% {
+    background-position: 75% 75%;
+    opacity: 0.4;
   }
   
   100% {
     background-position: 100% 100%;
-    /* opacity: 0.2; */
+    opacity: 0.2;
   }
 }
 

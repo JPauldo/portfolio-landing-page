@@ -15,9 +15,10 @@
 
     <nav>
       <a href="#section-1">About Me</a>
-      <a href="#section-2">Work</a>
+      <a href="#section-2">Projects</a>
       <a href="#section-3">Contact</a>
       <a href="https://cdn-images.zety.com/pages/resume_meme_2.png" target="_blank">Resume</a>
+      <!-- <a href="" target="_blank">README</a> -->
     </nav>
   </header>
 
@@ -29,7 +30,7 @@
   <main>
     <section class="main-section" id="section-1">
       <aside>
-        <h1>Section 1</h1>
+        <h1>About Me</h1>
       </aside>
 
       <article>
@@ -62,50 +63,66 @@
 
     <section class="main-section" id="section-2">
       <aside>
-        <h1>Section 2</h1>
+        <h1>Projects</h1>
       </aside>
 
       <section class="project-grid">
-        <figure id="project-main">
-          <section class="project-title" onclick="setId(this.id)">
+        <section class="project-frame" 
+                 id="project-main-frame">
+          <figure id="project-main"
+                 onclick="setId(this.id)"></figure>
+          <section class="project-title">
             <h3>Pre-work Study Guide</h3>
             <p>HTML/CSS</p>
           </section>
-        </figure>
+        </section>
 
-        <figure class="project-extra" id="project-2" onclick="setId(this.id)">
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-2"
+                  onclick="setId(this.id)"></figure>
           <section class="project-title">
             <h3>Horiseon (Accessibility)</h3>
             <p>HTML/CSS</p>
           </section>
-        </figure>
+        </section>
 
-        <figure class="project-extra" id="project-3" onclick="setId(this.id)">
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-3"
+                  onclick="setId(this.id)"></figure>
           <section class="project-title">
             <h3>Work in Progess</h3>
             <p>TBD</p>
           </section>
-        </figure>
 
-        <figure class="project-extra" id="project-4" onclick="setId(this.id)">
+        </section>
+
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-4"
+                  onclick="setId(this.id)"></figure>
           <section class="project-title">
             <h3>Work in Progess</h3>
             <p>TBD</p>
           </section>
-        </figure>
+        </section>
 
-        <figure class="project-extra" id="project-5" onclick="setId(this.id)">
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-5"
+                  onclick="setId(this.id)"></figure>
           <section class="project-title">
             <h3>Work in Progess</h3>
             <p>TBD</p>
           </section>
-        </figure>
+        </section>
       </section>
     </section>
 
     <section class="main-section" id="section-3">
       <aside>
-        <h1>Section 3</h1>
+        <h1>Contact</h1>
       </aside>
 
       <nav id="contact">
