@@ -1,8 +1,12 @@
+:root {
+  --text-color-main: #231942;
+}
+
 /* Formatting for the Page */
 body {
   background-color: #DEE2FF;
   font-family: Arial;
-  color: #231942;
+  color: var(--text-color-main);
 }
 
 /* Formatting for the Header */
@@ -20,6 +24,8 @@ header h1 {
 }
 
 header nav {
+  display: flex;
+  font-size: larger;
   padding: 30px 30px;
   text-align: center;
 }
@@ -44,7 +50,7 @@ header a {
 
 #banner img {
   align-items: center;
-  border: 2px dashed #231942;
+  border: 2px solid var(--text-color-main);
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -80,7 +86,7 @@ main {
 aside {
   text-align: right;
   padding-right: 1em;
-  border-right: 2px solid #231942;
+  border-right: 2px solid var(--text-color-main);
 }
 
 /* Formatting for the Project Section */
@@ -95,6 +101,7 @@ aside {
 .project-frame {
   border: 2px solid #9F86C0;
   position: relative;
+  min-height: 150px;
   transition: 0.3s;
 }
 
@@ -129,13 +136,11 @@ aside {
 /* Formatting for the Project Tiles */
 
 #project-main {
-  position: relative;
-  height: 100%;
   background-image: url("../images/aleh-tsikhanau-unsplash.jpg");
+  height: 100%;
 }
 
 #project-2 {
-  position: relative;
   background-image: url("../images/anamnesis33-unsplash.jpg");
 }
 
@@ -154,14 +159,14 @@ aside {
 /* Hovering Logic the Project Tile */
 .project-frame:hover {
   cursor: pointer;
-  scale: 1.1;
+  scale: 1.06;
 }
 
 #project-main-frame:hover {
-  scale: 1.05;
+  scale: 1.03;
 }
 
-.project-frame > figure:hover {
+.project-frame:hover > figure {
   animation: backgroundScroll 5s linear infinite;
 }
 
@@ -195,6 +200,7 @@ aside {
 /* Formatting the Contact Section */
 #contact {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -219,6 +225,34 @@ aside {
 
 /* For Smartphone Screens */
 @media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  header nav {
+    gap: 20px;
+  }
+
+  #banner {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+
+  #banner h2 {
+    position: relative;
+    margin: 0;
+  }
+
   .main-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -226,18 +260,35 @@ aside {
     margin: 10px;
     border-bottom: 2px dashed #231942;
   }
+
   aside {
     text-align: center;
     padding-right: 1em;
     border-right: 0;
     border-bottom: 2px solid #231942;
   }
+
   .project-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1.5fr 1.25fr 1.25fr 1.25fr 1.25fr;
+    margin-right: 0;
   }
-  #project-main {
-    grid-column: auto;
+  
+  #project-main-frame {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
+
+  .project-frame {
+    margin-left: 3em;
+    margin-right: 3em;
+    min-height: 250px;
+  }
+
+  .project-extra {
+    background-size: cover;
+    height: 254px;
+  }
+
 }
