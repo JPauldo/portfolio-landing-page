@@ -9,10 +9,10 @@ This repository houses the landing page for my portfolio. The work shown on this
 Below are screenshots of my Portfolio.
 
 Desktop Screen:
-![My Portfolio Site](assets\images\portfolio-screenshot.png)
+![My Portfolio Site](./assets/images/portfolio-screenshot.png)
 
 Mobile Screen:
-![My Portfolio Site (Mobile)](assets\images\portfolio-mobile-screenshot.png)
+![My Portfolio Site (Mobile)](./assets/images/portfolio-mobile-screenshot.png)
 
 ## Credits
 
