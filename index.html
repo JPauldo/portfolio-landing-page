@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Porfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Justin Pauldo</h1>
+
+    <nav>
+      <a href="#section-1">About Me</a>
+      <a href="#section-2">Projects</a>
+      <a href="#section-3">Contact</a>
+      <a href="https://cdn-images.zety.com/pages/resume_meme_2.png" target="_blank">Resume</a>
+      <!-- <a href="" target="_blank">README</a> -->
+    </nav>
+  </header>
+
+  <figure id="banner">
+    <img src="./assets/images/Capture.PNG" alt="Photo of Myself">
+    <h2>[Insert Quote Here]</h2>
+  </figure>
+
+  <main>
+    <section class="main-section" id="section-1">
+      <aside>
+        <h1>About Me</h1>
+      </aside>
+
+      <article>
+        <p>
+          Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn. Ngchtenff ooboshu li'heeagl naTsathoggua hrii phlegeth,
+          nglui uh'e ch' syha'h ftaghu gnaiih wgah'n f'shugg cah hafh'drn y-n'ghft, f'shagg cNyarlathotep
+          ngShub-Niggurath ilyaa uln chtenff throd nnnstell'bsna ph'ah y'hahor.
+          Lloig cilyaa mnahn' ilyaaagl ooboshu grah'n, n'ghft Chaugnar Faugn gof'nn hrii y-vulgtm, nglui kadishtu mg
+          llll.
+          Ftaghu nilgh'ri vulgtm R'lyeh Hastur shogg ehye y-sll'ha sll'ha, hriiyar vulgtmyar ngshagg Yoggoth y'hah
+          lw'nafhnyth hriior Shub-Niggurath Nyarlathotep, ilyaa li'hee ooboshu cAzathoth naYoggoth kadishtu sgn'wahl.
+          Nw uln kn'a chafh'drn hafh'drn wgah'n gotha nw gothaagl, 'bthnk vulgtm wgah'nyar n'gha throd stell'bsna shagg,
+          hlirgh h'gof'nn ctharanak shtunggliagl Shub-Niggurath lw'nafh ngChaugnar Faugn.
+        </p>
+        <p>
+          Stell'bsnaog nagnaiih ngllll lw'nafh nglui, s'uhn 'fhalma bug, y-n'ghft stell'bsna uh'e.
+          Ah ngron mnahn' ehye zhro sll'ha f'nog sll'ha nguln vulgtm kn'a s'uhn syha'h, cTsathoggua k'yarnak naflmg
+          gof'nn f'hai naflk'yarnak ph'uln hupadgh 'bthnk bug nilgh'ri.
+          Ebunma uh'e uln mg 'fhalma ph'kn'a h'wgah'n bug y-kadishtu sll'ha naflfm'latgh orr'e vulgtlagln kn'a, ehye
+          mnahn'agl shoggog kadishtu ngbug kadishtu vulgtlagln r'luh 'bthnk goka ee.
+          Hafh'drn cgrah'n Tsathoggua shogg fm'latgh mnahn' uln geb li'hee nog n'gha goka shugg, nglui shogg chtenff bug
+          Nyarlathotepnyth h'Chaugnar Faugn 'bthnk h'n'ghft ph'shogg bug ee hriinyth Cthulhu, tharanak geb li'hee
+          f'Tsathoggua uh'eoth vulgtm f'mg uln hrii kn'a k'yarnak.
+        </p>
+        <p>
+          N'ghanyth mnahn' uaaah, gnaiihoth ep phlegethoth, shugg.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="section-2">
+      <aside>
+        <h1>Projects</h1>
+      </aside>
+
+      <section class="project-grid">
+        <section class="project-frame" 
+                 id="project-main-frame">
+          <figure id="project-main"
+                 onclick="setId(this.id)"></figure>
+          <section class="project-title">
+            <h3>Pre-work Study Guide</h3>
+            <p>HTML/CSS</p>
+          </section>
+        </section>
+
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-2"
+                  onclick="setId(this.id)"></figure>
+          <section class="project-title">
+            <h3>Horiseon (Accessibility)</h3>
+            <p>HTML/CSS</p>
+          </section>
+        </section>
+
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-3"
+                  onclick="setId(this.id)"></figure>
+          <section class="project-title">
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
+          </section>
+
+        </section>
+
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-4"
+                  onclick="setId(this.id)"></figure>
+          <section class="project-title">
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
+          </section>
+        </section>
+
+        <section class="project-frame">
+          <figure class="project-extra"
+                  id="project-5"
+                  onclick="setId(this.id)"></figure>
+          <section class="project-title">
+            <h3>Work in Progess</h3>
+            <p>TBD</p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="main-section" id="section-3">
+      <aside>
+        <h1>Contact</h1>
+      </aside>
+
+      <nav id="contact">
+          <a href="https://media.tenor.com/UiUFIuFzuH0AAAAC/memes-wrong-number.gif" target="_blank">
+            <section>
+              <i class="material-icons">&#xe551;</i>+1 (689) 863-9153
+            </section>
+          </a>
+
+          <a href="https://fluentcrm.com/wp-content/uploads/2022/08/Screenshot_18-2.jpg" target="_blank">
+            <section>
+              <i class="material-icons">&#xe158;</i>jdpauldo862@gmailni.com
+            </section>
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank">
+            <section>
+              <i class="material-icons">&#xe8f8;</i>LinkedIn
+            </section>
+          </a>
+
+          <a href="https://github.com/JPauldo" target="_blank">
+            <section>
+              <i class="material-icons">&#xe30a;</i>Github
+            </section>
+          </a>
+      </nav>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
